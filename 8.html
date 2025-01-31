@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        .container{
+            background-color: lightgreen;
+            /* padding: 20px; */
+            border: 4px darkgreen solid;
+            display: flex;
+            justify-content: center; 
+            align-items:center;
+            /* height: 80px; */
+            flex-wrap: nowrap;
+            flex-direction: row;
+            min-height: 400px;
+            column-gap: 20px;
+            /* align-items: center; */
+            align-content: center;
+            border-radius: 5%;
+        }
+
+        .item{
+            background-color: pink;
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgb(255, 255, 255);
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            border-radius: 50px;
+
+        }
+
+        #ill{
+            flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="ill">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+
+    </div>
+</body>
+</html>
